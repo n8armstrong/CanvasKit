@@ -6,7 +6,7 @@
 //
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
-@import AFNetworking;
+#import <AFNetworking/AFNetworking.h>
 #import <Mantle/Mantle.h>
 
 #import "CKIClient.h"

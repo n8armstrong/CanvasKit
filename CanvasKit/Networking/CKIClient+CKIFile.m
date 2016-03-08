@@ -7,7 +7,7 @@
 //
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
-@import AFNetworking;
+#import <AFNetworking/AFNetworking.h>
 #import "CKIClient+CKIFile.h"
 #import "CKIFile.h"
 #import "CKIFolder.h"

@@ -10,7 +10,7 @@
 #import "CKISubmissionRecord.h"
 #import "CKIMediaFileUPloadTokenParser.h"
 #import "CKIMediaServer.h"
-@import AFNetworking;
+#import <AFNetworking/AFNetworking.h>
 
 @implementation CKIClient (CKISubmissionComment)
 
@@ -68,13 +68,13 @@
         
         manager.responseSerializer = [AFImageResponseSerializer serializer];
         manager.requestSerializer = [AFJSONRequestSerializer serializer];
-        
-        [manager GET:urlString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+
+        [manager GET:urlString parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
             UIImage *image = responseObject;
             if (success) {
                 success(image);
             }
-        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        } failure:^(NSURLSessionDataTask *task, NSError *error) {
             if (failure) {
                 failure(error);
             }

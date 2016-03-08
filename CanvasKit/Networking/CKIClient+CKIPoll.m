@@ -7,7 +7,7 @@
 //
 
 #import "CKIClient+CKIPoll.h"
-@import ReactiveCocoa;
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @implementation CKIClient (CKIPoll)
 

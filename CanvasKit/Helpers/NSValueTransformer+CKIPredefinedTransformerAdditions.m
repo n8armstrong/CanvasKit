@@ -7,7 +7,7 @@
 //
 
 #import "NSValueTransformer+CKIPredefinedTransformerAdditions.h"
-@import Mantle;
+#import <Mantle/Mantle.h>
 #import "ISO8601DateFormatter.h"
 
 #import "CKIRubricAssessment.h"
